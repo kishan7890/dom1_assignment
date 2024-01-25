@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini_calculator</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <div>
+        <input id="input1" type="number" value="">
+        <input id="input2" type="number" value="">
+    </div>
+    <div>
+        <button onclick="add()">add</button>
+        <button onclick="sub()">subtract</button>
+        <button onclick="multiply()">multiply</button>
+        <button onclick="division()">division</button>
+    </div>
+</body>
+<script>
+function add(){
+    var a=document.getElementById("input1").value
+    a=+a;
+    var b=document.getElementById("input2").value
+    b=+b;
+    alert(`${a} + ${b} = ${a+b}`);
+}
+function sub(){
+    var a=document.getElementById("input1").value
+    a=+a;
+    var b=document.getElementById("input2").value
+    b=+b;
+    alert(`${a} - ${b} = ${a-b}`);
+}
+function multiply(){
+    var a=document.getElementById("input1").value
+    a=+a;
+    var b=document.getElementById("input2").value
+    b=+b;
+    alert(`${a} x ${b} = ${a*b}`);
+}
+function division(){
+    var a=document.getElementById("input1").value
+    a=+a;
+    var b=document.getElementById("input2").value
+    b=+b;
+    alert(`${a} / ${b} = ${a/b}`);
+}
+</script>
+</html>
